@@ -3,22 +3,25 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const siteConfig = require('./config.js');
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 module.exports = {
   siteMetadata: {
-    title: "Barcadia",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
-    twitterUsername: "@dave",
-    image: "/yellow-metal-design-decoration.jpg",
-    siteUrl: "https://barcadia.netlify.com",
+    ...siteConfig
   },
   /* Your site config here */
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/content`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,20 +37,20 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: "https://medvision.io",
+        sitemap: "https://medvison.io/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-transformer-remark',
       options: {
-        host: "https://barcadia.netlify.com",
-        sitemap: "https://barcadia.netlify.com/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
-      },
+        plugins: [
+          'gatsby-remark-copy-linked-files',
+        ]
+      }
     },
     `gatsby-plugin-playground`,
     `gatsby-transformer-sharp`,
