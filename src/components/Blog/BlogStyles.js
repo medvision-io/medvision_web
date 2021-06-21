@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from 'styled-components';
+import 'katex/dist/katex.min.css';
 
 export const BlogItemsStyles = styled.section`
   display: flex;
@@ -9,7 +10,7 @@ export const BlogItemsStyles = styled.section`
   justify-content: center;
   padding-top: var(--sectionPadding);
   padding-bottom: var(--sectionPadding);
-`
+`;
 
 export const BlogItemStyles = styled.article`
   flex: 1 1 auto;
@@ -39,7 +40,7 @@ export const BlogItemStyles = styled.article`
     justify-content: space-between;
     align-items: center;
   }
-`
+`;
 
 export const BlogSingleStyles = styled.article`
   padding: var(--sectionPadding) var(--borderSpacing);
@@ -67,4 +68,4 @@ export const BlogSingleStyles = styled.article`
       padding-top: 40px;
     }
   }
-`
+`;

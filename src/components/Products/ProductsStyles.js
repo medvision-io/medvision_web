@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import 'katex/dist/katex.min.css';
 
 export const ProductsStyles = styled.section`
   padding: var(--sectionPadding) var(--borderSpacing);
@@ -117,8 +118,8 @@ export const ProductsStyles = styled.section`
       padding: 20px;
       background: linear-gradient(
         0deg,
-        rgba(var(--background), 1) 0%,
-        rgba(var(--background), 0) 100%
+        var(--backgroundColorFULL) 20%,
+        var(--backgroundColorNONE) 100%
       );
 
       > * {

@@ -21,7 +21,7 @@ const getProducts = graphql`
             featuredImage {
               childImageSharp {
                  gatsbyImageData(
-                   width: 600
+                   width: 500
                    placeholder: BLURRED
                    formats: [AUTO, WEBP, AVIF]
                  )
@@ -30,7 +30,7 @@ const getProducts = graphql`
             featuredImageDark {
               childImageSharp {
                  gatsbyImageData(
-                   width: 1920
+                   width: 500
                    placeholder: BLURRED
                    formats: [AUTO, WEBP, AVIF]
                  )

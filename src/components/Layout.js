@@ -1,11 +1,13 @@
-import React, { useContext } from "react"
-import { createGlobalStyle } from "styled-components"
-import SiteContext, { THEMES } from "./SiteContext"
-import "@fontsource/heebo"
+import React, { useContext } from 'react';
+import { createGlobalStyle } from 'styled-components';
+import SiteContext, { THEMES } from './SiteContext';
+import '@fontsource/heebo';
 
 const GlobalStyle = createGlobalStyle`
 :root {
   --background: ${props => (props.theme === THEMES.dark ? '#000' : '#fff')};
+  --backgroundColorNONE: ${props => props.theme === THEMES.dark ? 'rgba(0, 0, 0, 0)' : 'rgba(255, 255, 255, 0)'};
+  --backgroundColorFULL: ${props => props.theme === THEMES.dark ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)'};
   --fontColor: ${props => (props.theme === THEMES.dark ? '#fff' : '#000')};
   --primary: ${props => (props.theme === THEMES.dark ? '#ffc400' : '#fb8500')};
   --bannerTitle: 34px;
@@ -173,16 +175,16 @@ button.btn {
   .section-padding--large {
     padding: var(--paddingLarge) var(--paddingBorder);
   }
-`
+`;
 
 const Layout = ({ children }) => {
   const [theme] = useContext(SiteContext);
   return (
     <>
-      <GlobalStyle theme={theme}/>
+      <GlobalStyle theme={theme} />
       {children}
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

@@ -21,7 +21,7 @@ const Post = ({ post }) => {
         <article className="blogsingle__content">
           <Content body={html} title={title} date={date} />
           <div className="blogsingle__back">
-            <Button to="/posts" text="Back to news" as={Link} />
+            <Button to="/posts" text="Back to articles" as={Link} />
           </div>
         </article>
       </BlogSingleStyles>

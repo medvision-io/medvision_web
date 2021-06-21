@@ -121,7 +121,16 @@ export const query = graphql`
             featuredImage {
               childImageSharp {
                  gatsbyImageData(
-                   width: 600
+                   width: 375
+                   placeholder: BLURRED
+                   formats: [AUTO, WEBP, AVIF]
+                 )
+              }
+            }
+            featuredImageDark {
+              childImageSharp {
+                 gatsbyImageData(
+                   width: 375
                    placeholder: BLURRED
                    formats: [AUTO, WEBP, AVIF]
                  )

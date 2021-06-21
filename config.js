@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  title: 'Medvision',
+  title: 'MedVision',
   description: 'democratizing AI in medicine',
   author: 'Medvision.io',
   image: '/medvision.png',

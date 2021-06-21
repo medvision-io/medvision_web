@@ -4,12 +4,12 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const siteConfig = require('./config.js');
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 module.exports = {
   siteMetadata: {
-    ...siteConfig
+    ...siteConfig,
   },
   /* Your site config here */
   plugins: [
@@ -30,11 +30,11 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: "https://medvision.io",
-        sitemap: "https://medvison.io/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
+        host: 'https://medvision.io',
+        sitemap: 'https://medvison.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     {
@@ -42,14 +42,26 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: `gatsby-remark-katex`,
             options: {
-              maxWidth: 800,
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`,
             },
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1280,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // point!
+            options: {},
+          },
           'gatsby-remark-copy-linked-files',
-        ]
-      }
+        ],
+      },
     },
     `gatsby-plugin-playground`,
     `gatsby-transformer-sharp`,
@@ -58,4 +70,4 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-transition-link`,
   ],
-}
+};
