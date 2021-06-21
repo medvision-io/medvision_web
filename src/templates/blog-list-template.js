@@ -1,11 +1,13 @@
-import React from "react"
+import React, { useContext } from "react"
 import { graphql, Link } from "gatsby"
 import styled from "styled-components"
 import Seo from "../components/SEO"
-import SimpleBanner from "../components/SimpleBanner/SimpleBanner"
 import { StaticImage } from "gatsby-plugin-image"
 import BlogItem from "../components/Blog/BlogItem"
 import BlogItems from "../components/Blog/BlogItems"
+import { UseSiteMetadata } from "../hooks/useSiteMetadata"
+import BannerModule from "../components/BannerModule/BannerModule"
+import SiteContext, {THEMES} from "../components/SiteContext"
 
 const Pagination = styled.aside`
   display: flex;
@@ -33,8 +35,12 @@ const Pagination = styled.aside`
   }
 `
 
-const Blog = props => {
-  const { currentPage, numPages } = props.pageContext
+const Blog = ({data, pageContext}) => {
+  const {
+    blogPage: { title, subTitle },
+  } = UseSiteMetadata();
+  const [theme] = useContext(SiteContext);
+  const { currentPage, numPages } = pageContext
 
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
@@ -42,20 +48,25 @@ const Blog = props => {
   const prevPage =
     currentPage - 1 === 1 ? `/blogs` : `/blogs/${currentPage - 1}`
   const nextPage = `/blogs/${currentPage + 1}`
-  const { data } = props
+  const { edges } = data.allMarkdownRemark;
   return (
     <>
       <Seo title="Blogs" />
-      <SimpleBanner title="Trade news">
-        <StaticImage
+      <BannerModule title={title} subTitle={subTitle} image={
+        theme === THEMES.dark ? <StaticImage
           className="banner__image"
-          src="../images/iphone-camera.jpg"
-          alt="Apple iPhone camera"
-        />
-      </SimpleBanner>
+          imgClassName="banner__image--content"
+          src="../../images/blog.jpg"
+          alt="Hero image"
+        /> : <StaticImage
+          className="banner__image"
+          imgClassName="banner__image--content"
+          src="../../images/blog-light.jpg"
+          alt="Hero image"
+        />} compressed={true}/>
       <BlogItems>
-        {data.post.edges.map(({ node }) => {
-          return <BlogItem key={node.id} blog={node} />
+        {edges.map(({ node }) => {
+          return <BlogItem key={node.fields.slug} post={node.frontmatter} slug={node.fields.slug} />
         })}
       </BlogItems>
       {numPages > 1 && (
@@ -89,19 +100,34 @@ const Blog = props => {
 }
 
 export const query = graphql`
-  query getPosts($skip: Int!, $limit: Int!) {
-    post: allContentfulPosts(
-      skip: $skip
+  query IndexTemplate($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
       limit: $limit
-      sort: { fields: published, order: DESC }
+      skip: $skip
+      filter: {
+        frontmatter: { draft: { eq: false }, template: { eq: "post" } }
+      }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {
-          slug
-          title
-          introduction
-          postId: contentful_id
-          published(formatString: "Do MMMM YYYY")
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            title
+            description
+            featuredImage {
+              childImageSharp {
+                 gatsbyImageData(
+                   width: 600
+                   placeholder: BLURRED
+                   formats: [AUTO, WEBP, AVIF]
+                 )
+              }
+            }
+          }
         }
       }
     }
