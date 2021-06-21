@@ -4,16 +4,19 @@ import Footer from "./src/components/Footer/Footer"
 import Layout from "./src/components/Layout"
 import { MenuProvider } from "./src/components/MenuContext"
 import NavModule from "./src/components/NavModule/NavModule"
+import { SiteProvider } from "./src/components/SiteContext"
 
 export function wrapPageElement({ element, props }) {
   return (
-    <Layout {...props}>
-      <NavModule />
-      <AnimMain>
-        {element}
-        <Footer />
-      </AnimMain>
-    </Layout>
+    <SiteProvider>
+      <Layout {...props}>
+        <NavModule />
+        <AnimMain>
+          {element}
+          <Footer />
+        </AnimMain>
+      </Layout>
+    </SiteProvider>
   )
 }
 
