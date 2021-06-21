@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1 align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
   <img src="src/components/NavModule/medvision_logo.svg" height="50px" /> MedVision Website
 </h1>
 
