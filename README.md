@@ -1,5 +1,5 @@
 <h1 align="center">
-  MedVision Website
+  <img src="src/components/NavModule/medvision_logo.svg" height="50px" /> MedVision Website
 </h1>
 
 Page built with [GatsbyJS](https://www.gatsbyjs.com/).
