@@ -34,6 +34,7 @@ Page built with [GatsbyJS](https://www.gatsbyjs.com/).
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories
+```
 .
 ├── node_modules
 ├── content
@@ -50,6 +51,7 @@ A quick look at the top-level files and directories
 ├── package-lock.json
 ├── package.json
 └── README.md
+```
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
