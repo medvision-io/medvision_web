@@ -5,7 +5,7 @@ import Seo from "../components/SEO"
 
 const Error404 = styled.section`
   background-color: var(--background);
-  color: #fff;
+  color: var(--fontColor);
 `
 
 const Title = styled.h1`
