@@ -30,6 +30,12 @@ Page built with [GatsbyJS](https://www.gatsbyjs.com/).
     Your site is now running at `http://localhost:8000`!
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    
+## Edit site content
+
+- **config.js** - this file contains all editable sentences, edit and push changes to update website
+- **blog posts** - see [blog Wiki](https://github.com/medvision-io/medvision_web/wiki/Add-article-on-Blog)
+- **products** - see [product Wiki](https://github.com/medvision-io/medvision_web/wiki/Add-product-page)
 
 ## 🧐 What's inside?
 
