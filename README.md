@@ -1,41 +1,28 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <h1 align="center">
-  Barcadia Starter
+  MedVision Website
 </h1>
 
-Barcadia is a GatsbyJS starter theme that uses Contentful for content managemnt. It includes the main configuration files found in Gatsby.
+Page built with [GatsbyJS](https://www.gatsbyjs.com/).
 
 ## Getting started
 
-1.  **Create a Gatsby site.**
+1.  **Prerequisites**
 
-    Use the Gatsby CLI to create a new site, specifying the Barcadia starter.
+    - Node 14+
+
+2.  **Clone the repository**
 
     ```shell
-    # create a new Gatsby site using the barcadia starter
-    gatsby new my-barcadia-starter https://github.com/bagseye/barcadia
-    ```
-
-2.  **Before running Gatsby Develop**
-
-    You'll need to setup a free account with Contentful [Here](https://www.contentful.com/) and create a space ID and access token for your new site.
-
-    Once these are generated create a new file in the site root called `.env.development` and populate it with the following information:
-
-    ```
-    CONTENTFUL_SPACE_ID={YOUR SPACE ID}
-    CONTENTFUL_ACCESS_TOKEN={YOUR ACCESS TOKEN}
-    ```
-
-    **NOTE** - Ensure this file has been added to your `.gitignore` to prevent it from being tracked
+    git clone https://github.com/medvision-io/medvision_web.git
+    ```    
 
 3.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-barcadia-starter/
-    gatsby develop
+    cd medvision_web/
+    npm run start
     ```
 
 4.  **Open your site**
@@ -44,22 +31,19 @@ Barcadia is a GatsbyJS starter theme that uses Contentful for content managemnt.
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-barcadia-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## CMS Content Model
-
-    Follow the steps for importing data with Contentful [Here](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export) using the example file `content-model.json`, found in the site root.
-
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories
 .
 ├── node_modules
+├── content
+├── gatsby
+├── images
 ├── src
+├── static
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc
-├── content-model.json
 ├── gatsby-config.js
 ├── gatsby-node.js
 ├── LICENSE
@@ -69,7 +53,15 @@ A quick look at the top-level files and directories
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
+2.  **`/content`**: This directory will contain all products and blog posts loaded into gatsby as a data source.
+
+2.  **`/gatsby`**: This directory contains configs used by gatsby.
+
+2.  **`/images`**: Images used by gatsby as data source.
+    
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+    
+2.  **`/static`**: Files from this directory are directly copied to the server.
 
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
@@ -98,16 +90,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
-
-#### Photo Credits
-
-[Ales Nesetril](https://unsplash.com/@alesnesetril)
-[Josh Rose](https://unsplash.com/@joshsrose)
-[Cat Han](https://unsplash.com/@figmentprints)
-[Martin Sanchez](https://unsplash.com/@martinsanchez)
-[Onur Binay](https://unsplash.com/@onurbinay)
-[Torsten Dettlaff](https://www.pexels.com/@tdcat)
-[Nick Demou](https://www.pexels.com/@nick-demou-365778)
-[Little John](https://unsplash.com/@joao_freire)
