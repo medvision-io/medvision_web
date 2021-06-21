@@ -1,59 +1,35 @@
-import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { PerksModuleStyles } from "./PerksModuleStyles"
-import Perk from "./Perk"
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+import { PerksModuleStyles } from './PerksModuleStyles';
+import Perk from './Perk';
 
-const PerksModule = () => {
+const PerksModule = ({ perks }) => {
   return (
     <PerksModuleStyles>
       <StaticImage
         className="perks__image--bg"
-        src="../../images/abstract-building.jpg"
-        alt="Perks Module"
+        src="../../../images/abstract-building.jpg"
+        alt="perks background"
         layout="constrained"
         placeholder="tracedSVG"
       />
       <div className="perks__image--overlay"></div>
       <div className="container">
-        <Perk
-          title="Built For Speed"
-          content="By using GatsbyJS, the Barcadia site is super-fast out of the box"
-        >
-          <StaticImage
-            src="../../images/logos/gatsby-logo.svg"
-            alt="Perk Image"
-            placeholder="blurred"
-            layout="constrained"
-            placeholder="tracedSVG"
-          />
-        </Perk>
-        <Perk
-          title="Built For Content"
-          content="Contentful helps you edit your application with ease as your business expands"
-        >
-          <StaticImage
-            src="../../images/logos/contentful-logo.svg"
-            alt="Perk Image"
-            placeholder="blurred"
-            layout="constrained"
-            placeholder="tracedSVG"
-          />
-        </Perk>
-        <Perk
-          title="Built For Security"
-          content="A static site reduces your chance of a security exposure through injection"
-        >
-          <StaticImage
-            src="../../images/logos/netlify-logo.svg"
-            alt="Perk Image"
-            placeholder="blurred"
-            layout="constrained"
-            placeholder="tracedSVG"
-          />
-        </Perk>
+        {perks.map(perk => (
+          <Perk title={perk.title} content={perk.description} key={perk.title}>
+            {perk.image && (
+              <img
+                src={perk.image}
+                alt={`Perk - ${perk.title}`}
+                placeholder="blurred"
+                className="perks__image--image"
+              />
+            )}
+          </Perk>
+        ))}
       </div>
     </PerksModuleStyles>
-  )
-}
+  );
+};
 
-export default PerksModule
+export default PerksModule;

@@ -5,7 +5,7 @@ export const FaqStyles = styled.section`
     min-height: 50px;
     border-radius: 5px;
     background-color: #272727;
-    color: #fff;
+    color: var(--fontColor);
     display: flex;
     align-items: center;
     justify-content: space-between;

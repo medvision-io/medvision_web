@@ -29,7 +29,7 @@ export const BlogItemStyles = styled.article`
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: var(--fontColor);
     transition: color 0.3s;
     cursor: pointer;
   }

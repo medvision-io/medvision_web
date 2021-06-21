@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const PerksModuleStyles = styled.section`
   padding: var(--sectionPadding) var(--borderSpacing);
@@ -30,6 +30,11 @@ export const PerksModuleStyles = styled.section`
   > .container {
     position: relative;
 
+    img.perks__image--image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
     @media (min-width: 1154px) {
       display: flex;
       justify-content: space-between;
@@ -37,7 +42,7 @@ export const PerksModuleStyles = styled.section`
       margin-left: 0;
     }
   }
-`
+`;
 
 export const PerkStyles = styled.aside`
   .gatsby-image-wrapper {
@@ -143,4 +148,4 @@ export const PerkStyles = styled.aside`
   &:last-child {
     margin-bottom: 0;
   }
-`
+`;

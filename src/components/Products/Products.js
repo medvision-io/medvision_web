@@ -4,20 +4,31 @@ import { ProductsStyles } from "./ProductsStyles"
 import Product from "./Product"
 
 const getProducts = graphql`
-  query {
-    products: allContentfulProducts {
+  query Products {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { draft: { eq: false }, template: { eq: "product" } }
+      }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       edges {
         node {
-          name
-          price
-          excerpt
-          contentful_id
-          slug
-          description {
-            description
+          fields {
+            slug
           }
-          images {
-            gatsbyImageData(width: 600, formats: [AUTO, WEBP])
+          frontmatter {
+            date
+            title
+            description
+            featuredImage {
+              childImageSharp {
+                 gatsbyImageData(
+                   width: 600
+                   placeholder: BLURRED
+                   formats: [AUTO, WEBP, AVIF]
+                 )
+              }
+            }
           }
         }
       }
@@ -27,14 +38,14 @@ const getProducts = graphql`
 
 const Features = () => {
   const response = useStaticQuery(getProducts)
-  const products = response.products.edges
+  const products = response.allMarkdownRemark.edges
 
   return (
     <ProductsStyles>
       <div className="features__container">
         <div className="features__container--scroll">
           {products.map(({ node }) => {
-            return <Product feature={node} />
+            return <Product key={node.frontmatter.title} product={node.frontmatter} slug={node.fields.slug} />
           })}
         </div>
       </div>

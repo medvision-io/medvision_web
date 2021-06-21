@@ -2,8 +2,8 @@ import styled from "styled-components"
 
 export const ProductsStyles = styled.section`
   padding: var(--sectionPadding) var(--borderSpacing);
-  color: #fff;
-  background-color: #000;
+  color: var(--fontColor);
+  background-color: var(--background);
 
   .features__container {
     width: calc(100% + 60px);
@@ -32,11 +32,11 @@ export const ProductsStyles = styled.section`
         height: 14px;
       }
       &::-webkit-scrollbar-thumb {
-        background: #ffc400;
+        background: var(--primary);
         border-radius: 0px;
       }
       &::-webkit-scrollbar-thumb:hover {
-        background: #ffc400;
+        background: var(--primary);
       }
       &::-webkit-scrollbar-track {
         background: #505050;
@@ -54,7 +54,7 @@ export const ProductsStyles = styled.section`
   .features__item {
     flex: 0 0 80%;
     min-height: 408px;
-    background-color: #000;
+    background-color: var(--background);
     margin-right: 8px;
     margin-left: 8px;
     overflow: hidden;
@@ -83,7 +83,7 @@ export const ProductsStyles = styled.section`
 
       h2,
       p {
-        color: #fff;
+        color: var(--fontColor);
       }
 
       .features__item--img {
@@ -117,8 +117,8 @@ export const ProductsStyles = styled.section`
       padding: 20px;
       background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0) 100%
+        rgba(var(--background), 1) 0%,
+        rgba(var(--background), 0) 100%
       );
 
       > * {
@@ -132,13 +132,13 @@ export const ProductsStyles = styled.section`
       }
 
       > h2 {
-        color: #fff;
+        color: var(--fontColor);
         font-size: var(--h2);
         margin-bottom: 20px;
       }
 
       > p {
-        color: #fff;
+        color: var(--fontColor);
         font-size: var(--p);
         margin-bottom: 40px;
       }

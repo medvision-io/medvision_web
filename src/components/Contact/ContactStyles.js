@@ -16,8 +16,8 @@ export const ContactStyles = styled.section`
   }
   input,
   textarea {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--background);
+    color: var(--fontColor);
     border: none;
     border-bottom: 3px solid var(--inActive);
     width: 100%;

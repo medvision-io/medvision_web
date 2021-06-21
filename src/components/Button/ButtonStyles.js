@@ -5,7 +5,7 @@ export const ButtonStyles = styled.button`
   display: inline-flex;
   align-items: center;
   background-color: transparent;
-  color: #fff;
+  color: var(--fontColor);
   outline: none;
   border: none;
   padding: 0;
@@ -52,7 +52,7 @@ export const ButtonStyles = styled.button`
 
   &:hover,
   &:focus {
-    color: #fff;
+    color: var(--fontColor);
 
     &:after {
       width: 0%;

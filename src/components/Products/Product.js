@@ -1,11 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
-import Button from "../Button/Button"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import React, { useContext } from "react"
+import { Link } from 'gatsby';
+import Button from '../Button/Button';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import SiteContext, { THEMES } from "../SiteContext"
 
-const Feature = ({ feature }) => {
-  const { name, slug, images, excerpt } = feature
-  const image = getImage(images[0])
+const Product = ({ product, slug }) => {
+  const [theme] = useContext(SiteContext);
+  const { title, description, featuredImage, featuredImageDark } = product;
+  const image = getImage(theme === THEMES.dark ? featuredImageDark : featuredImage);
 
   return (
     <aside className="features__item">
@@ -16,13 +18,13 @@ const Feature = ({ feature }) => {
           alt="Product Image"
         />
         <div className="features__item--content">
-          {name && <h2>{name}</h2>}
-          {excerpt && <p>{excerpt}</p>}
+          {title && <h2>{title}</h2>}
+          {description && <p>{description}</p>}
           <Button text="Read More" as="span" />
         </div>
       </Link>
     </aside>
-  )
-}
+  );
+};
 
-export default Feature
+export default Product;

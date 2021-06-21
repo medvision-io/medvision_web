@@ -1,15 +1,15 @@
-import React, { useState } from "react"
-import { FaqStyles } from "./FaqStyles"
-import { MdExpandMore as Chevron } from "react-icons/md"
+import React, { useState } from 'react';
+import { FaqStyles } from './FaqStyles';
+import { MdExpandMore as Chevron } from 'react-icons/md';
 
 const Faq = ({ title, description }) => {
-  const [showInfo, setInfo] = useState(false)
+  const [showInfo, setInfo] = useState(false);
 
   const toggleInfo = () => {
-    setInfo(showInfo => !showInfo)
-  }
+    setInfo(showInfo => !showInfo);
+  };
   return (
-    <FaqStyles className={showInfo ? `${"faq-open"}` : `${"faq-closed"}`}>
+    <FaqStyles className={showInfo ? `${'faq-open'}` : `${'faq-closed'}`}>
       <div className="question" onClick={toggleInfo}>
         {title}
         <div className="trigger">
@@ -18,7 +18,7 @@ const Faq = ({ title, description }) => {
       </div>
       {showInfo && <div className="answer">{description}</div>}
     </FaqStyles>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;
