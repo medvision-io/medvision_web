@@ -1,45 +1,45 @@
-import React from "react"
+import React from 'react';
 import {
   FaFacebookSquare as Facebook,
   FaTwitterSquare as Twitter,
   FaInstagram as Instagram,
   FaLinkedin as Linkedin,
-} from "react-icons/fa"
+} from 'react-icons/fa';
 
 export const menuItems = [
   {
-    path: "/",
-    text: "home",
+    path: '/',
+    text: 'home',
   },
   {
-    path: "/products",
-    text: "products",
+    path: '/products',
+    text: 'products',
   },
   {
-    path: "/blog",
-    text: "blog",
+    path: '/posts',
+    text: 'blog',
   },
   {
-    path: "/contact",
-    text: "contact",
+    path: '/contact',
+    text: 'contact',
   },
-]
+];
 
 export const socialItems = [
   {
-    path: "www.facebook.com",
+    sizeKey: 'facebook',
     icon: <Facebook />,
   },
   {
-    path: "www.twitter.com",
+    sizeKey: 'twitter',
     icon: <Twitter />,
   },
   {
-    path: "www.instagram.com",
+    sizeKey: 'instagram',
     icon: <Instagram />,
   },
   {
-    path: "www.linkedin.com",
+    sizeKey: 'linkedin',
     icon: <Linkedin />,
   },
-]
+];
