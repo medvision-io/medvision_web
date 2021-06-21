@@ -8,7 +8,7 @@ module.exports = {
   title: 'Medvision',
   description: 'democratizing AI in medicine',
   author: 'Medvision.io',
-  image: '/yellow-metal-design-decoration.jpg',
+  image: '/medvision.png',
   siteUrl: 'https://medvision.io',
   copyright: 'MedVision © All rights reserved.',
   postsPerPage: 6,
