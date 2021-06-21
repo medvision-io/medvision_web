@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const FooterStyles = styled.footer`
-  background-color: #000;
+  background-color: var(--background);
   padding: var(--sectionPadding) 25px 40px 25px;
 
   .container {
@@ -34,7 +34,7 @@ export const FooterStyles = styled.footer`
       }
 
       a {
-        color: #fff;
+        color: var(--fontColor);
         text-decoration: none;
         text-transform: capitalize;
         font-weight: 700;
@@ -84,7 +84,7 @@ export const FooterStyles = styled.footer`
         &:hover,
         &:focus {
           a {
-            color: #fff;
+            color: var(--fontColor);
           }
         }
       }
@@ -98,7 +98,7 @@ export const FooterStyles = styled.footer`
       margin: 0;
 
       a {
-        color: #fff;
+        color: var(--fontColor);
         font-weight: 700;
         text-decoration: none;
         transition: color 0.3s ease;

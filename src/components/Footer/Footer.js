@@ -2,8 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import { menuItems, socialItems } from "../../constants/links"
 import { FooterStyles } from "./FooterStyles"
+import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 
 const Footer = () => {
+  const siteData = UseSiteMetadata();
   return (
     <FooterStyles>
       <div className="container">
@@ -27,7 +29,7 @@ const Footer = () => {
               return (
                 <li key={index}>
                   <a
-                    href={item.path}
+                    href={siteData[item.sizeKey]}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                   >
@@ -40,15 +42,7 @@ const Footer = () => {
         </div>
         <div className="copyright">
           <p>
-            Designed & developed by{" "}
-            <a
-              href="https://www.morganbaker.dev"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Morgan Baker
-            </a>
-            <span>.</span>
+            {siteData.copyright}
           </p>
         </div>
       </div>

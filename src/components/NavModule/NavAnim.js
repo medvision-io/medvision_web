@@ -19,7 +19,7 @@ export const barTwoVariants = {
 
 export const barThreeVariants = {
   open: {
-    y: [0, -10, -10, -10, -10],
+    y: [0, -10, -10, -14, -14],
     rotate: [0, 0, 0, -45, -45],
   },
   closed: {

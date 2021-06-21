@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const BannerModuleStyles = styled.section`
-  height: 100vh;
+  height: ${props => (props.compressed ? '300px' : '100vh')};
   position: relative;
   padding: 30px var(--borderSpacing);
 
@@ -24,11 +24,12 @@ export const BannerModuleStyles = styled.section`
   .banner__content {
     position: relative;
     z-index: 2;
-    min-height: 33vh;
+    min-height: ${props => (props.compressed ? '100px' : '33vh')};
     width: 100%;
 
     @media (min-width: 768px) {
       width: 66vw;
+      padding-left: ${props => (props.compressed ? '100px' : null)};
     }
 
     h1,
@@ -54,10 +55,10 @@ export const BannerModuleStyles = styled.section`
       height: 30px;
       background-color: transparent;
       border: none;
-      color: #fff;
+      color: var(--fontColor);
       font-size: 22px;
       display: flex;
       margin-top: 30px;
     }
   }
-`
+`;

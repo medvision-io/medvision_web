@@ -1,11 +1,13 @@
-import React from "react"
+import React, { useContext } from "react"
 import { createGlobalStyle } from "styled-components"
+import SiteContext, { THEMES } from "./SiteContext"
 import "@fontsource/heebo"
 
 const GlobalStyle = createGlobalStyle`
 :root {
-  --background: #000;
-  --primary: #ffc400;
+  --background: ${props => (props.theme === THEMES.dark ? '#000' : '#fff')};
+  --fontColor: ${props => (props.theme === THEMES.dark ? '#fff' : '#000')};
+  --primary: ${props => (props.theme === THEMES.dark ? '#ffc400' : '#fb8500')};
   --bannerTitle: 34px;
   --bannerSubTitle: 20px;
   --borderSpacing: 30px;
@@ -69,7 +71,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--background);
-    color: #fff;
+    color: var(--fontColor);
     overflow-x: hidden;
     font-size: var(--p);
     
@@ -114,7 +116,7 @@ blockquote {
 
 a.btn,
 button.btn {
-    color: #fff;
+    color: var(--fontColor);
     background-color: transparent;
     font-family: 'Heebo', sans-serif;
     border: 0;
@@ -174,9 +176,10 @@ button.btn {
 `
 
 const Layout = ({ children }) => {
+  const [theme] = useContext(SiteContext);
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle theme={theme}/>
       {children}
     </>
   )
