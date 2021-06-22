@@ -9,7 +9,7 @@ featuredImageDark: './api-dark.jpg'
 description: API for developers
 ---
 
-## Medical API.
+## Medical API
 
 AI models should be provided as a Rest API service to run our cloud infrastructure.
 
