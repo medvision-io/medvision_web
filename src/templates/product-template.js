@@ -13,7 +13,7 @@ const productTemplate = ({ data }) => {
 
   return (
     <>
-      <Seo title={`${title} - ${siteTitle}`} />
+      <Seo title={`${title}`} />
       <PageBannerComponent lightImage={featuredImage} darkImage={featuredImageDark} title={title} enquire={true} />
       <ProductContainer product={data.markdownRemark} />
     </>

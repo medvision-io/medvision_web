@@ -34,6 +34,7 @@ const Footer = () => {
                       href={siteData[item.sizeKey]}
                       target="_blank"
                       rel="nofollow noreferrer noopener"
+                      aria-label={`Link to ${item.sizeKey}`}
                     >
                       {item.icon}
                     </a>

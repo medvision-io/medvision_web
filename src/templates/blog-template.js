@@ -12,7 +12,7 @@ const Blog = ({ data: { markdownRemark } }) => {
 
   return (
     <>
-      <Seo title={`${postTitle} - ${siteTitle}`} />
+      <Seo title={`${postTitle} - Blog`} />
       <Post post={markdownRemark} />
     </>
   );

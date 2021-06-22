@@ -51,7 +51,7 @@ const Blog = ({data, pageContext}) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <>
-      <Seo title="Blogs" />
+      <Seo title="Blog" />
       <BannerModule title={title} subTitle={subTitle} image={
         theme === THEMES.dark ? <StaticImage
           className="banner__image"

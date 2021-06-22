@@ -13,8 +13,6 @@ module.exports = {
   },
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -86,5 +84,21 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: siteConfig.title,
+        short_name: siteConfig.title,
+        description: siteConfig.description,
+        lang: `en`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#7cffda`,
+        display: `standalone`,
+        icon: 'static/medvision_sq.png'
+      },
+    },
+    `gatsby-plugin-react-helmet`,
   ],
 };
