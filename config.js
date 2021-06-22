@@ -14,7 +14,7 @@ module.exports = {
   postsPerPage: 6,
   googleAnalyticsId: '',
   twitter: 'https://twitter.com/medvision_io',
-  github: 'medvision-io',
+  github: 'https://github.com/medvision-io',
   linkedin: 'https://www.linkedin.com/company/79372805/',
   facebook: 'https://www.facebook.com/Medvisionio-100510102291328',
   instagram: '',

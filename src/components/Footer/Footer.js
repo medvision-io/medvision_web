@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
-import { menuItems, socialItems } from "../../constants/links"
-import { FooterStyles } from "./FooterStyles"
-import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
+import React from 'react';
+import { Link } from 'gatsby';
+import { menuItems, socialItems } from '../../constants/links';
+import { FooterStyles } from './FooterStyles';
+import { UseSiteMetadata } from '../../hooks/useSiteMetadata';
 
 const Footer = () => {
   const siteData = UseSiteMetadata();
@@ -19,7 +19,7 @@ const Footer = () => {
                     <span>.</span>
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
         </div>
@@ -27,27 +27,28 @@ const Footer = () => {
           <ul>
             {socialItems.map((item, index) => {
               return (
-                <li key={index}>
-                  <a
-                    href={siteData[item.sizeKey]}
-                    target="_blank"
-                    rel="nofollow noreferrer noopener"
-                  >
-                    {item.icon}
-                  </a>
-                </li>
-              )
+                siteData[item.sizeKey] !== '' &&
+                siteData[item.sizeKey] != null && (
+                  <li key={index}>
+                    <a
+                      href={siteData[item.sizeKey]}
+                      target="_blank"
+                      rel="nofollow noreferrer noopener"
+                    >
+                      {item.icon}
+                    </a>
+                  </li>
+                )
+              );
             })}
           </ul>
         </div>
         <div className="copyright">
-          <p>
-            {siteData.copyright}
-          </p>
+          <p>{siteData.copyright}</p>
         </div>
       </div>
     </FooterStyles>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

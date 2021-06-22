@@ -4,6 +4,7 @@ import {
   FaTwitterSquare as Twitter,
   FaInstagram as Instagram,
   FaLinkedin as Linkedin,
+  FaGithub as Github,
 } from 'react-icons/fa';
 
 export const menuItems = [
@@ -37,6 +38,10 @@ export const socialItems = [
   {
     sizeKey: 'instagram',
     icon: <Instagram />,
+  },
+  {
+    sizeKey: 'github',
+    icon: <Github />,
   },
   {
     sizeKey: 'linkedin',
