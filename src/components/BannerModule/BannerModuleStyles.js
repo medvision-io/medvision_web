@@ -45,18 +45,19 @@ export const BannerModuleStyles = styled.section`
     h2 {
       margin-top: 0;
       margin-bottom: 30px;
-      font-weight: 300;
+      font-weight: 600;
       font-size: var(--bannerSubTitle);
       letter-spacing: -0.5px;
     }
 
     button {
-      width: 30px;
-      height: 30px;
+      width: 45px;
+      height: 45px;
       background-color: transparent;
       border: none;
-      color: var(--fontColor);
-      font-size: 22px;
+      color: var(--primary);
+      cursor: pointer;
+      font-size: 32px;
       display: flex;
       margin-top: 30px;
     }

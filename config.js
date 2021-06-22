@@ -33,11 +33,11 @@ module.exports = {
   },
   home: {
     title: 'MedVision',
-    subTitle: 'Democratizing AI in medicine',
+    subTitle: 'Democratization of AI for medical imagining',
     productsTitle:
-      'A super-fast theme that is easy to get started, using the power of GatsbyJS',
+      'Support your diagnosis with machine learning solutions for medical imaging.',
     productsDesc:
-      'Using modern CSS properties such as grid, this theme is optimised for speed and mobile devices. Giving users an excellent experience on any device. Future-proofing your product.',
+      'Use one of the models provided by our partners. Verify that your decision is consistent with the predictions of the machine learning model. Use a visualization tool to understand the reasoning behind the model.',
     perks: [
       {
         title: 'Built For Speed',

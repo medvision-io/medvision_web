@@ -115,7 +115,7 @@ export const ProductsStyles = styled.section`
       width: 100%;
       position: relative;
       z-index: 2;
-      padding: 20px;
+      padding: 140px 20px 20px 20px;
       background: linear-gradient(
         0deg,
         var(--backgroundColorFULL) 20%,

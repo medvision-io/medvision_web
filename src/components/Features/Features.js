@@ -9,6 +9,7 @@ const getProducts = graphql`
       filter: {
         frontmatter: { features: { eq: true }, draft: { eq: false }, template: { eq: "product" } }
       }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {

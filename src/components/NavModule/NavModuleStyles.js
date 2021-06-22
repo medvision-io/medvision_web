@@ -59,21 +59,29 @@ export const NavModuleStyles = styled.nav`
       transition: color 0.3s ease;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 600px) {
       font-size: 25px;
     }
 
-    img {
-      max-height: 80px;
-      margin-bottom: 20px;
+    @media (min-width: 1024px) {
+      font-size: 25px;
+      flex-direction: column;
     }
 
-    @media (min-width: 1024px) {
-      flex-direction: column;
-      img {
+    img {
+      max-height: 50px;
+      //margin-bottom: 20px;
+
+      @media (min-width: 600px) {
+        max-height: 80px;
+        margin-right: 12px;
+      }
+
+      @media (min-width: 1024px) {
         max-height: 100px;
       }
     }
+
 
     span {
       color: var(--primary);
@@ -91,7 +99,6 @@ export const NavModuleStyles = styled.nav`
       align-items: center;
       img {
         max-height: 50px;
-        margin-right: 12px;
         margin-bottom: 0;
       }
     }
@@ -102,6 +109,13 @@ export const NavModuleStyles = styled.nav`
     align-items: center;
     justify-content: space-between;
     height: 100%;
+  }
+  
+  .container-placeholder {
+    display: block;
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 
   .menu {
@@ -216,7 +230,7 @@ export const NavModuleStyles = styled.nav`
         top: 18.75%;
         background-color: rgba(0, 0, 0, 0);
         border-radius: 50%;
-        box-shadow: 9px 3px 0px 0px #f0f0f0;
+        box-shadow: 9px 3px 0px 0px #fff;
         opacity: 0;
         transform: scale(0.3) rotate(65deg);
         transition: transform 0.3s ease-in, opacity 0.2s ease-in 0.1s;
@@ -237,7 +251,7 @@ export const NavModuleStyles = styled.nav`
         width: 0px;
         height: 0px;
         border-right: 7px solid rgba(0, 0, 0, 0);
-        border-bottom: 5px solid #f0f0f0;
+        border-bottom: 5px solid #fff;
         border-left: 7px solid rgba(0, 0, 0, 0);
         transform: scale(0.55) rotate(35deg);
         opacity: 0;
@@ -245,7 +259,7 @@ export const NavModuleStyles = styled.nav`
       }
 
       .star:before {
-        border-bottom: 5px solid #f0f0f0;
+        border-bottom: 5px solid #fff;
         border-left: 3px solid rgba(0, 0, 0, 0);
         border-right: 3px solid rgba(0, 0, 0, 0);
         position: absolute;
@@ -267,7 +281,7 @@ export const NavModuleStyles = styled.nav`
         width: 0px;
         height: 0px;
         border-right: 7px solid rgba(0, 0, 0, 0);
-        border-bottom: 5px solid #f0f0f0;
+        border-bottom: 5px solid #fff;
         border-left: 7px solid rgba(0, 0, 0, 0);
         transform: rotate(-70deg);
         content: '';

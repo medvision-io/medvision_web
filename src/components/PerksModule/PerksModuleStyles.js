@@ -33,6 +33,7 @@ export const PerksModuleStyles = styled.section`
     img.perks__image--image {
       max-width: 100%;
       max-height: 100%;
+      height: 40px;
     }
 
     @media (min-width: 1154px) {

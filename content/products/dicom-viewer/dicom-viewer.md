@@ -4,8 +4,8 @@ template: 'product'
 date: '2021-06-20'
 draft: false
 features: true
-featuredImage: './image-light.jpg'
-featuredImageDark: './image.jpg'
+featuredImage: './viewer-light.jpg'
+featuredImageDark: './viewer.jpg'
 description: Our DICOM viewer is the best
 ---
 

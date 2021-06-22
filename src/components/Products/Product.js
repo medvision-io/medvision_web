@@ -15,7 +15,7 @@ const Product = ({ product, slug }) => {
         <GatsbyImage
           className="features__item--img"
           image={image}
-          alt="Product Image"
+          alt={`Product Image - ${title}`}
         />
         <div className="features__item--content">
           {title && <h2>{title}</h2>}

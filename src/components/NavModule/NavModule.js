@@ -77,6 +77,7 @@ const NavModule = () => {
               </Link>
             </div>
           )}
+          <div className="container-placeholder" />
           <div className="theme-button-container">
             <button
               className="theme-button"
