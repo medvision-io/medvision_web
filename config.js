@@ -13,10 +13,10 @@ module.exports = {
   copyright: 'MedVision © All rights reserved.',
   postsPerPage: 6,
   googleAnalyticsId: '',
-  twitter: 'https://twitter.com/medvision',
+  twitter: 'https://twitter.com/medvision_io',
   github: 'medvision-io',
-  linkedin: '',
-  facebook: '',
+  linkedin: 'https://www.linkedin.com/company/79372805/',
+  facebook: 'https://www.facebook.com/Medvisionio-100510102291328',
   instagram: '',
   rss: '/rss.xml',
   blogPage: {
