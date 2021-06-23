@@ -5,6 +5,7 @@ import {
   FaInstagram as Instagram,
   FaLinkedin as Linkedin,
   FaGithub as Github,
+  FaHome as Website,
 } from 'react-icons/fa';
 
 export const menuItems = [
@@ -46,5 +47,9 @@ export const socialItems = [
   {
     sizeKey: 'linkedin',
     icon: <Linkedin />,
+  },
+  {
+    sizeKey: 'www',
+    icon: <Website />,
   },
 ];

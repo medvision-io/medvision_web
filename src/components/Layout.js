@@ -9,13 +9,16 @@ const GlobalStyle = createGlobalStyle`
   --backgroundColorNONE: ${props => props.theme === THEMES.dark ? 'rgba(0, 0, 0, 0)' : 'rgba(255, 255, 255, 0)'};
   --backgroundColorFULL: ${props => props.theme === THEMES.dark ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)'};
   --fontColor: ${props => (props.theme === THEMES.dark ? '#fff' : '#000')};
+  --fontColorSecondary: ${props => (props.theme === THEMES.dark ? '#aaa' : '#999')};
   --primary: ${props => (props.theme === THEMES.dark ? '#ffc400' : '#fb8500')};
   --bannerTitle: 34px;
   --bannerSubTitle: 20px;
   --borderSpacing: 30px;
   --menuWidth: 100vw;
   --sectionPadding: 70px;
+  --h1: 27px;
   --h2: 20px;
+  --h3: 18px;
   --p: 15px;
   --blockquote: 20px;
 
@@ -23,27 +26,34 @@ const GlobalStyle = createGlobalStyle`
     --bannerTitle: 42px;
     --bannerSubTitle: 22px;
     --sectionPadding: 80px;
+    --h1: 30px;
     --h2: 22px;
+    --h3: 20px;
     --p: 16px;
   }
 
   @media(min-width:414px) {
     --bannerTitle: 50px;
     --bannerSubTitle: 27px;
+    --h1: 35px;
     --h2: 27px;
+    --h3: 25px;
     --p: 18px;
   }
 
   @media(min-width:768px) {
     --bannerTitle: 60px;
     --bannerSubTitle: 30px;
+    --h1: 38px;
     --h2: 30px;
+    --h3: 27px;
     --p: 19px;
     --blockquote: 26px;
   }
 
   @media(min-width:1024px) {
     --borderSpacing: 75px;
+    --h1: 41px;
     --h2: 36px;
     --p: 20px;
   }
@@ -51,13 +61,17 @@ const GlobalStyle = createGlobalStyle`
   @media(min-width:1152px) {
     --bannerTitle: 50px;
     --bannerSubTitle: 26px;
+    --h1: 34px;
     --h2: 26px;
+    --h3: 24px;
     --p: 18px;
   }
 
   @media(min-width:1440px) {
     --borderSpacing: 105px;
+    --h1: 38px;
     --h2: 28px;
+    --h3: 25px;
     --p: 19px;
   }
 }

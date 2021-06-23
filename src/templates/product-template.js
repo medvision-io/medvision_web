@@ -3,10 +3,8 @@ import { graphql } from 'gatsby';
 import Seo from '../components/SEO';
 import PageBannerComponent from '../components/BannerModule/PageBanner';
 import ProductContainer from '../components/Products/ProductContainer';
-import { UseSiteMetadata } from '../hooks/useSiteMetadata';
 
 const productTemplate = ({ data }) => {
-  const { title: siteTitle } = UseSiteMetadata();
   const {
     frontmatter: { title, featuredImage, featuredImageDark },
   } = data.markdownRemark;

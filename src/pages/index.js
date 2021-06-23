@@ -8,6 +8,7 @@ import Features from '../components/Features/Features';
 import { UseSiteMetadata } from '../hooks/useSiteMetadata';
 import { StaticImage } from 'gatsby-plugin-image';
 import SiteContext, { THEMES } from "../components/SiteContext"
+import TeamMembers from "../components/TeamMembers/TeamMembers"
 
 const Index = () => {
   const {
@@ -39,6 +40,7 @@ const Index = () => {
         <Perk title="The Title" content="The content" />
       </PerksModule>
       <Features />
+      <TeamMembers />
     </>
   );
 };

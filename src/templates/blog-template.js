@@ -1,11 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Seo from '../components/SEO';
-import { UseSiteMetadata } from "../hooks/useSiteMetadata"
 import Post from '../components/Blog/Post';
 
 const Blog = ({ data: { markdownRemark } }) => {
-  const { title: siteTitle} = UseSiteMetadata();
   const {
     frontmatter: { title: postTitle },
   } = markdownRemark;
