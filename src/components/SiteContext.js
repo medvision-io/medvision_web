@@ -1,23 +1,24 @@
-import React, { useState } from "react"
+import React, { useState } from 'react';
+import useCookie from 'react-use-cookie';
 
 // Create the context
-const SiteContext = React.createContext()
+const SiteContext = React.createContext();
 
 export const THEMES = {
   dark: 'dark',
-  light: 'light'
-}
+  light: 'light',
+};
 
 export function SiteProvider({ children }) {
   // Place state in here
-  const [theme, setTheme] = useState(THEMES.light)
-  const [data, setData] = useState({})
+  const [theme, setTheme] = useCookie('theme', THEMES.light);
+  const [data, setData] = useState({});
 
   return (
     <SiteContext.Provider value={[theme, setTheme, data, setData]}>
       {children}
     </SiteContext.Provider>
-  )
+  );
 }
 
-export default SiteContext
+export default SiteContext;

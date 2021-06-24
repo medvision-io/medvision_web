@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'gatsby';
 import MenuContext from '../MenuContext';
-import SiteContext, { THEMES } from "../SiteContext"
+import SiteContext, { THEMES } from '../SiteContext';
 import { NavModuleStyles } from './NavModuleStyles';
 import { motion } from 'framer-motion';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
@@ -27,7 +27,7 @@ const NavModule = () => {
     setNav(isOpen => !isOpen);
   };
   const toggleMode = () => {
-    setTheme(theme === THEMES.dark ? THEMES.light : THEMES.dark);
+    setTheme(theme === THEMES.dark ? THEMES.light : THEMES.dark, { days: 365 });
   };
 
   useScrollPosition(
@@ -38,12 +38,19 @@ const NavModule = () => {
       if (currPos.y > -200 && logoSmall) {
         setLogoSmall(false);
       }
-      if (-currPos.y + 100 > data.darkElPos && -currPos.y + 80 < data.darkElPos + data.darkElHeight && !isLogoOnDark) {
-        setIsLogoOnDark(true)
-      } else if(-currPos.y + 100 < data.darkElPos && isLogoOnDark) {
-        setIsLogoOnDark(false)
-      } else if(-currPos.y + 80 > data.darkElPos + data.darkElHeight  && isLogoOnDark) {
-        setIsLogoOnDark(false)
+      if (
+        -currPos.y + 100 > data.darkElPos &&
+        -currPos.y + 80 < data.darkElPos + data.darkElHeight &&
+        !isLogoOnDark
+      ) {
+        setIsLogoOnDark(true);
+      } else if (-currPos.y + 100 < data.darkElPos && isLogoOnDark) {
+        setIsLogoOnDark(false);
+      } else if (
+        -currPos.y + 80 > data.darkElPos + data.darkElHeight &&
+        isLogoOnDark
+      ) {
+        setIsLogoOnDark(false);
       }
     },
     [logoSmall, isLogoOnDark, data.darkElPos]
@@ -78,7 +85,10 @@ const NavModule = () => {
 
           {title && (
             <div className={logoSmall ? 'logo logo--small' : 'logo'}>
-              <img src={theme === THEMES.light && !isLogoOnDark ? logo : logoLight} alt="logo" />
+              <img
+                src={theme === THEMES.light && !isLogoOnDark ? logo : logoLight}
+                alt="logo"
+              />
               <Link to="/" className={isLogoOnDark ? 'text-light' : ''}>
                 {title}
                 <span>.</span>
@@ -93,7 +103,9 @@ const NavModule = () => {
               onClick={toggleMode}
               title="Toggle color mode"
             >
-              <div className={`sun ${theme === THEMES.light ? 'visible' : ''}`} />
+              <div
+                className={`sun ${theme === THEMES.light ? 'visible' : ''}`}
+              />
               <div className={`moon ${theme === THEMES.dark ? 'visible' : ''}`}>
                 <div className="star" />
                 <div className="star small" />
