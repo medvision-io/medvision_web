@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
   --backgroundColorFULL: ${props => props.theme === THEMES.dark ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)'};
   --fontColor: ${props => (props.theme === THEMES.dark ? '#fff' : '#000')};
   --fontColorSecondary: ${props => (props.theme === THEMES.dark ? '#aaa' : '#999')};
+  --lightFontColor: #fff;
+  --darkFontColor: #000;
   --primary: ${props => (props.theme === THEMES.dark ? '#ffc400' : '#fb8500')};
   --bannerTitle: 34px;
   --bannerSubTitle: 20px;

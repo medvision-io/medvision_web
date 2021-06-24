@@ -57,6 +57,10 @@ export const NavModuleStyles = styled.nav`
       color: var(--fontColor);
       text-decoration: none;
       transition: color 0.3s ease;
+      
+      &.text-light {
+        color: var(--lightFontColor);
+      }
     }
 
     @media (min-width: 600px) {

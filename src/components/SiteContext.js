@@ -11,9 +11,10 @@ export const THEMES = {
 export function SiteProvider({ children }) {
   // Place state in here
   const [theme, setTheme] = useState(THEMES.light)
+  const [data, setData] = useState({})
 
   return (
-    <SiteContext.Provider value={[theme, setTheme]}>
+    <SiteContext.Provider value={[theme, setTheme, data, setData]}>
       {children}
     </SiteContext.Provider>
   )

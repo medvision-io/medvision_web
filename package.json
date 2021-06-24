@@ -50,6 +50,7 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.11.0",
     "react-image-gallery": "^1.0.9",
+    "react-intersection-observer": "^8.32.0",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {

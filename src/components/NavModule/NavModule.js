@@ -19,8 +19,9 @@ import logo from './medvision_logo.svg';
 
 const NavModule = () => {
   const [isOpen, setNav] = useContext(MenuContext);
-  const [theme, setTheme] = useContext(SiteContext);
+  const [theme, setTheme, data] = useContext(SiteContext);
   const [logoSmall, setLogoSmall] = useState(false);
+  const [isLogoOnDark, setIsLogoOnDark] = useState(false);
 
   const toggleNav = () => {
     setNav(isOpen => !isOpen);
@@ -37,8 +38,15 @@ const NavModule = () => {
       if (currPos.y > -200 && logoSmall) {
         setLogoSmall(false);
       }
+      if (-currPos.y + 100 > data.darkElPos && -currPos.y + 80 < data.darkElPos + data.darkElHeight && !isLogoOnDark) {
+        setIsLogoOnDark(true)
+      } else if(-currPos.y + 100 < data.darkElPos && isLogoOnDark) {
+        setIsLogoOnDark(false)
+      } else if(-currPos.y + 80 > data.darkElPos + data.darkElHeight  && isLogoOnDark) {
+        setIsLogoOnDark(false)
+      }
     },
-    [logoSmall]
+    [logoSmall, isLogoOnDark, data.darkElPos]
   );
 
   const { title } = UseSiteMetadata();
@@ -70,8 +78,8 @@ const NavModule = () => {
 
           {title && (
             <div className={logoSmall ? 'logo logo--small' : 'logo'}>
-              <img src={theme === THEMES.light ? logo : logoLight} alt="logo" />
-              <Link to="/">
+              <img src={theme === THEMES.light && !isLogoOnDark ? logo : logoLight} alt="logo" />
+              <Link to="/" className={isLogoOnDark ? 'text-light' : ''}>
                 {title}
                 <span>.</span>
               </Link>
