@@ -25,7 +25,7 @@ const Product = ({ member }) => {
               member[item.sizeKey] != null && (
                 <li key={index}>
                   <a
-                    href={member[item.sizeKey]}
+                    href={item.sizeKey === 'email' ? `mailto:${member[item.sizeKey]}` : member[item.sizeKey]}
                     target="_blank"
                     rel="nofollow noreferrer noopener"
                     aria-label={`Link to ${item.sizeKey} - ${name}`}

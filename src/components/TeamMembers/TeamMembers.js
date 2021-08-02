@@ -35,7 +35,7 @@ const TeamMembers = () => {
 
   return (
     <TeamMembersStyles>
-      <h1>Meat The Team</h1>
+      <h1>Meet The Team</h1>
       <div className="team__container">
         <div className="team__container--scroll">
           {response.site.siteMetadata.team.map((tm) => {
