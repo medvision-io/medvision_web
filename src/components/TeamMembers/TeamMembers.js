@@ -10,13 +10,20 @@ const getProducts = graphql`
         team {
           name
           title
-          twitter
-          www
-          linkedin
-          instagram
-          image 
-          github
+          image
+          email
           facebook
+          github
+          instagram
+          linkedin
+          medium
+          snapchat
+          skype
+          twitch
+          twitter
+          whatsapp
+          www
+          youtube
         }
       }
     }
