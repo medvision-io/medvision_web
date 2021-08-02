@@ -6,7 +6,7 @@ draft: false
 features: true
 featuredImage: './viewer-light.jpg'
 featuredImageDark: './viewer.jpg'
-description: Our DICOM viewer is the best
+description: Open-source Web DICOM viewer
 ---
 
 ## DICOM viewer
