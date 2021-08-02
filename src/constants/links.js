@@ -6,6 +6,13 @@ import {
   FaLinkedin as Linkedin,
   FaGithub as Github,
   FaHome as Website,
+  FaEnvelope as Email,
+  FaMedium as Medium,
+  FaSnapchatSquare as Snapchat,
+  FaSkype as Skype,
+  FaTwitch as Twitch,
+  FaWhatsappSquare as Whatsapp,
+  FaYoutubeSquare as Youtube,
 } from 'react-icons/fa';
 
 export const menuItems = [
@@ -51,5 +58,33 @@ export const socialItems = [
   {
     sizeKey: 'www',
     icon: <Website />,
+  },
+  {
+    sizeKey: 'email',
+    icon: <Email />,
+  },
+  {
+    sizeKey: 'medium',
+    icon: <Medium />,
+  },
+  {
+    sizeKey: 'snapchat',
+    icon: <Snapchat />,
+  },
+  {
+    sizeKey: 'skype',
+    icon: <Skype />,
+  },
+  {
+    sizeKey: 'twitch',
+    icon: <Twitch />,
+  },
+  {
+    sizeKey: 'whatsapp',
+    icon: <Whatsapp />,
+  },
+  {
+    sizeKey: 'youtube',
+    icon: <Youtube />,
   },
 ];

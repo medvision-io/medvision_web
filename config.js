@@ -38,10 +38,11 @@ module.exports = {
       image: '/team/piotr.jpg',
       linkedin: 'https://www.linkedin.com/in/piotr-mazurek-155032164/',
       twitter: '',
-      facebook: 'https://www.facebook.com/piotr.mazurek.33',
+      facebook: '',
       github: 'https://github.com/tugot17',
       instagram: '',
       www: 'https://tugot17.github.io/data-science-blog/',
+      email: 'piotr.mazurek@medvision.io',
     },
     {
       name: 'Kemal Erdem',
@@ -53,6 +54,7 @@ module.exports = {
       github: 'https://github.com/burnpiro',
       instagram: '',
       www: 'https://erdem.pl',
+      email: 'kemal.erdem@medvision.io',
     },
   ],
   home: {
