@@ -11,10 +11,25 @@ description: Marketplace for AI solutions
 
 ## AI marketplace
 
-In our marketplace, AI-based solution developers can share the medical image analysis models they create. 
+In our marketplace, developers of AI-based solutions
+can share the medical image analysis models they create.
+The marketplace is accessible directly from the medical
+image viewer. Any algorithm offered on the platform can
+be directly integrated into the viewer. 
 
-Offered algorithms are provided by authors from all over the world. Available implementations are based on publications from top conferences and journals.  
+The offered algorithms are provided by authors from all over
+the world. Available implementations are based on publications
+from the best conferences and journals.
+Both FDA-certified algorithms and non-certified technology
+demos that should not be used in medical practice are offered.
 
-Available machine learning models are focused on image analysis. We offer models for classification, detection, semantic image segmentation, or keypoint analysis. 
+If you would like to contact the creator of the model,
+a special tab is available. There you can post suggestions,
+show incorrect predictions,
+or generally discuss with the creator of the solution.  
 
-Models are available directly from the DICOM browser, and their results can be viewed as visualizations overlaid on the input image.
+The available machine learning models focus on image analysis.
+We offer models for classification, detection,
+semantic image segmentation, or keypoint analysis.
+Predictions can be presented to doctors using a visualization
+tool provided by us. 
