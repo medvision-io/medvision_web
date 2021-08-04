@@ -78,22 +78,22 @@ module.exports = {
       'Use one of the models provided by our partners. Verify that your decision is consistent with the predictions of the machine learning model. Use a visualization tool to understand the reasoning behind the model.',
     perks: [
       {
-        title: 'DICOMs in a browser\n',
+        title: 'DICOMs in a browser',
         description:
           'View DICOMs directly in your web browser, without the need to install anything.',
-        image: '/logos/gatsby-logo.svg',
+        image: '/logos/file-image-o.svg',
       },
       {
         title: 'Share DICOMs',
         description:
           'Easily share DICOM images with other clinicians and patients by simply sending them a link.',
-        image: '/logos/gatsby-logo.svg',
+        image: '/logos/share.svg',
       },
       {
         title: 'AI assistant',
         description:
           'Accelerate your work by using AI algorithms available on our platform.',
-        image: '/logos/gatsby-logo.svg',
+        image: '/logos/medkit.svg',
       },
     ],
   },
