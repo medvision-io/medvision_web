@@ -12,7 +12,7 @@ module.exports = {
   siteUrl: 'https://medvision.io',
   copyright: 'MedVision © All rights reserved.',
   postsPerPage: 6,
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'G-M85R80KFP7',
   twitter: 'https://twitter.com/medvision_io',
   github: 'https://github.com/medvision-io',
   linkedin: 'https://www.linkedin.com/company/79372805/',
