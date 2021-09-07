@@ -71,7 +71,7 @@ module.exports = {
   ],
   home: {
     title: 'MedVision',
-    subTitle: 'Democratization of AI for medical imagining',
+    subTitle: 'Democratization of AI for medical imaging',
     productsTitle:
       'Support your diagnosis with machine learning solutions for medical imaging.',
     productsDesc:
