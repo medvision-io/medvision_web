@@ -1,7 +1,7 @@
 ---
 title: 'DICOM Viewer'
 template: 'product'
-date: '2021-06-20'
+date: '2021-06-30'
 draft: false
 features: true
 featuredImage: './viewer-light.jpg'
@@ -13,17 +13,18 @@ description: Open-source Web DICOM viewer
 
 ![](./image.jpg)
 
-A web browser-based DICOM file viewer is available as part of our platform. 
+A browser-based DICOM file viewer is available as part of our platform. 
 The viewer supports both 3D and 2D images, and by using WebGL technology,
-rendering is as fast as native solutions. 
+rendering is as fast as with native solutions. 
 
-If needed, the artificial intelligence algorithms available in the platform can be used to analyze the viewed image.
-Predictions returned by AI will be overlaid on the input images. A doctor can use any machine learning model available on the platform. 
+The viewed image can be anonymized with a single click and
+shared with another doctor or patient, along with annotations applied to the image. 
+
+If needed, the artificial intelligence algorithms available
+in the platform can be used to analyze the viewed image.
+The predictions returned by the AI will be overlaid on the input images. The doctor can use any machine learning model available on the platform. 
 
 By using machine learning models,
-a doctor can confront his diagnosis with an AI model
+a doctor can confront their diagnosis with an AI model
 and thus improve the quality of patient care.
-Predictions of the models should be considered suggestions only and should not be used as final diagnoses. 
-
-Uploaded images are encrypted and stored in the cloud in an individual doctor's account.
-If needed, the doctor can generate a link that temporarily shares the image (without personal information) with third parties.
+The predictions of models should only be considered as suggestions and should not be used as final diagnose

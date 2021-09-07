@@ -61,6 +61,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: siteConfig.googleAnalyticsId,
+        includeInDevelopment: true,
+      },
+    },
     `gatsby-plugin-playground`,
     {
       resolve: `gatsby-plugin-sharp`,

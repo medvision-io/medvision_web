@@ -12,7 +12,7 @@ module.exports = {
   siteUrl: 'https://medvision.io',
   copyright: 'MedVision © All rights reserved.',
   postsPerPage: 6,
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'G-M85R80KFP7',
   twitter: 'https://twitter.com/medvision_io',
   github: 'https://github.com/medvision-io',
   linkedin: 'https://www.linkedin.com/company/79372805/',
@@ -78,22 +78,22 @@ module.exports = {
       'Use one of the models provided by our partners. Verify that your decision is consistent with the predictions of the machine learning model. Use a visualization tool to understand the reasoning behind the model.',
     perks: [
       {
-        title: 'Built For Speed',
+        title: 'DICOMs in a browser',
         description:
-          'By using GatsbyJS, the Barcadia site is super-fast out of the box',
-        image: '/logos/gatsby-logo.svg',
+          'View DICOMs directly in your web browser, without the need to install anything.',
+        image: '/logos/file-image-o.svg',
       },
       {
-        title: 'Built For Content',
+        title: 'Share DICOMs',
         description:
-          'Contentful helps you edit your application with ease as your business expands',
-        image: '/logos/gatsby-logo.svg',
+          'Easily share DICOM images with other clinicians and patients by simply sending them a link.',
+        image: '/logos/share.svg',
       },
       {
-        title: 'Built For Security',
+        title: 'AI assistant',
         description:
-          'A static site reduces your chance of a security exposure through injection',
-        image: '/logos/gatsby-logo.svg',
+          'Accelerate your work by using AI algorithms available on our platform.',
+        image: '/logos/medkit.svg',
       },
     ],
   },
