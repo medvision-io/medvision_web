@@ -30,8 +30,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://medvision.io',
-        sitemap: 'https://medvison.io/sitemap.xml',
+        host: 'https://zhiva.ai',
+        sitemap: 'https://zhiva.ai/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

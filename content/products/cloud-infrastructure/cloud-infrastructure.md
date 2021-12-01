@@ -39,5 +39,5 @@ on the platform who will be able to immediately use
 the model you created. Iterate faster and build
 a better product with our help. 
 
-For more information, please visit our [developer blog](https://medvision.io/posts).
+For more information, please visit our [developer blog](https://zhiva.ai/posts).
 Additionally, on our [Github](https://github.com/medvision-io), we provide several examples of deployments that could be used as a starting point for deploying your models.
