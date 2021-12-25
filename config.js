@@ -14,7 +14,7 @@ module.exports = {
   postsPerPage: 6,
   googleAnalyticsId: 'G-M85R80KFP7',
   twitter: 'https://twitter.com/zhiva_ai',
-  github: 'https://github.com/medvision-io',
+  github: 'https://github.com/zhiva-ai',
   linkedin: 'https://www.linkedin.com/company/zhiva-ai',
   facebook: 'https://www.facebook.com/Zhivaai-101835685680869',
   instagram: 'https://www.instagram.com/zhiva.ai',
