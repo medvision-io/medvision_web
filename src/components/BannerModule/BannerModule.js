@@ -37,7 +37,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire, demo, image, 
               </h2>
             )}
             {enquire && <Button text="Enquire Now" as={Link} to="/contact" />}
-            {demo && <Button text="Lunch Demo" as={Link} to={demoLink} />}
+            {demo && <Button text="Launch Demo" as={Link} to={demoLink} />}
             <button onClick={scrollToArea} aria-label="scroll down">
               <Arrow />
             </button>
