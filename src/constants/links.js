@@ -29,7 +29,7 @@ export const menuItems = [
     text: 'demo',
   },
   {
-    path: 'https://docs.zhiva.ai',
+    path: 'https://docs.zhiva.ai/latest',
     text: 'docs',
   },
   {

@@ -81,7 +81,7 @@ module.exports = {
         title: 'DICOMs in a browser',
         description:
           'View DICOMs directly in your web browser, without the need to install anything.',
-        image: '/logos/file-image-o.svg',
+        image: '/logos/devices.svg',
       },
       {
         title: 'Share DICOMs',

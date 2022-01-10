@@ -45,6 +45,7 @@ const PerksModule = ({ perks }) => {
               <img
                 src={perk.image}
                 alt={`Perk - ${perk.title}`}
+                style={{minHeight: '60px'}}
                 placeholder="blurred"
                 className="perks__image--image"
               />
