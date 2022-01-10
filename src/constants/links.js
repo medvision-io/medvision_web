@@ -25,8 +25,12 @@ export const menuItems = [
     text: 'products',
   },
   {
-    path: '/posts',
-    text: 'blog',
+    path: 'https://alpha.zhiva.ai',
+    text: 'demo',
+  },
+  {
+    path: 'https://docs.zhiva.ai',
+    text: 'docs',
   },
   {
     path: '/contact',

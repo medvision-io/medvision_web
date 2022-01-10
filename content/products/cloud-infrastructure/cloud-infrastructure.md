@@ -40,4 +40,4 @@ the model you created. Iterate faster and build
 a better product with our help. 
 
 For more information, please visit our [developer blog](https://zhiva.ai/posts).
-Additionally, on our [Github](https://github.com/medvision-io), we provide several examples of deployments that could be used as a starting point for deploying your models.
+Additionally, on our [Github](https://github.com/zhiva-ai), we provide several examples of deployments that could be used as a starting point for deploying your models.

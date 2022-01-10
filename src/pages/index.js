@@ -21,6 +21,7 @@ const Index = () => {
       <BannerModule
         title={title}
         subTitle={subTitle}
+        demo
         image={
           theme === THEMES.dark ? <StaticImage
             className="banner__image"

@@ -1,5 +1,5 @@
 <h1 align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-  <img src="src/components/NavModule/medvision_logo.svg" height="50px" /> MedVision Website
+  <img src="src/components/NavModule/medvision_logo.svg" height="50px" /> zhiva.ai Website
 </h1>
 
 Page built with [GatsbyJS](https://www.gatsbyjs.com/).
@@ -13,7 +13,7 @@ Page built with [GatsbyJS](https://www.gatsbyjs.com/).
 2.  **Clone the repository**
 
     ```shell
-    git clone https://github.com/medvision-io/medvision_web.git
+    git clone https://github.com/zhiva-ai/zhivaai_web.git
     ```    
 
 3.  **Start developing.**
@@ -21,7 +21,7 @@ Page built with [GatsbyJS](https://www.gatsbyjs.com/).
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd medvision_web/
+    cd zhivaai_web/
     npm install
     npm run start
     ```
@@ -35,8 +35,8 @@ Page built with [GatsbyJS](https://www.gatsbyjs.com/).
 ## Edit site content
 
 - **config.js** - this file contains all editable sentences, edit and push changes to update website
-- **blog posts** - see [blog Wiki](https://github.com/medvision-io/medvision_web/wiki/Add-article-on-Blog)
-- **products** - see [product Wiki](https://github.com/medvision-io/medvision_web/wiki/Add-product-page)
+- **blog posts** - see [blog Wiki](https://github.com/zhiva-ai/zhivaai_web/wiki/Add-article-on-Blog)
+- **products** - see [product Wiki](https://github.com/zhiva-ai/zhivaai_web/wiki/Add-product-page)
 
 ## 🧐 What's inside?
 
