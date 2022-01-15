@@ -8,12 +8,24 @@ export const ContactStyles = styled.section`
 
   input {
     height: 50px;
+  }
+  
+  .input-container {
     margin-bottom: 1.25rem;
 
     @media (min-width: 1200px) {
       margin-bottom: 1.875rem;
     }
   }
+  
+  .error-message {
+    color: #cc0033;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 0 15px;
+  }
+
   input,
   textarea {
     background-color: var(--background);
@@ -24,7 +36,7 @@ export const ContactStyles = styled.section`
     font-size: 1rem;
     font-weight: 900;
     font-family: "Heebo", sans-serif;
-    padding: 15px;
+    padding: 15px 15px 0;
     transition: border-bottom-color 0.3s;
 
     &:focus {
@@ -46,8 +58,5 @@ export const ContactStyles = styled.section`
     &:-moz-placeholder {
       color: var(--inActive);
     }
-  }
-  textarea {
-    margin-bottom: 2.125rem;
   }
 `

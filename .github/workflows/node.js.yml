@@ -10,6 +10,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      GATSBY_CONTACT_API: https://zhiva-contact-form.azurewebsites.net/api/ContactForm
+      GATSBY_CAPTCHA_SITE_KEY: 6LcAWxQeAAAAAOUX1yvrmLTSSvFk-iZL1q-m7GF9
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
