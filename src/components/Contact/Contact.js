@@ -74,7 +74,6 @@ const Contact = () => {
           },
           body: JSON.stringify(formData),
         });
-        console.log(response);
         if (response.status < 400) {
           setSuccess(true);
         } else {
