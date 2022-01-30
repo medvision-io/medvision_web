@@ -14,6 +14,18 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [siteConfig.GTag],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Respect Do Not Track users
+          respectDNT: true,
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
@@ -59,13 +71,6 @@ module.exports = {
           },
           'gatsby-remark-copy-linked-files',
         ],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: siteConfig.googleAnalyticsId,
-        includeInDevelopment: true,
       },
     },
     `gatsby-plugin-playground`,

@@ -12,7 +12,7 @@ module.exports = {
   siteUrl: 'https://zhiva.ai',
   copyright: 'zhiva.ai © All rights reserved.',
   postsPerPage: 6,
-  googleAnalyticsId: 'G-M85R80KFP7',
+  GTag: 'G-S28PSG7HTG',
   twitter: 'https://twitter.com/zhiva_ai',
   github: 'https://github.com/zhiva-ai',
   linkedin: 'https://www.linkedin.com/company/zhiva-ai',
