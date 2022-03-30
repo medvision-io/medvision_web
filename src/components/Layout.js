@@ -30,7 +30,12 @@ const GlobalStyle = createGlobalStyle`
   --h2: 20px;
   --h3: 18px;
   --p: 15px;
+  --body: 12px;
   --blockquote: 20px;
+  --paperBackground: ${props =>
+    props.theme === THEMES.dark ? 'rgb(28, 28, 28)' : 'rgba(255, 255, 255)'};
+  --elevation2: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  --elevation3: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
 
   @media(min-width:375px) {
     --bannerTitle: 42px;
@@ -40,6 +45,7 @@ const GlobalStyle = createGlobalStyle`
     --h2: 22px;
     --h3: 20px;
     --p: 16px;
+    --body: 13px;
   }
 
   @media(min-width:414px) {
@@ -49,6 +55,7 @@ const GlobalStyle = createGlobalStyle`
     --h2: 27px;
     --h3: 25px;
     --p: 18px;
+    --body: 14px;
   }
 
   @media(min-width:768px) {
@@ -58,6 +65,7 @@ const GlobalStyle = createGlobalStyle`
     --h2: 30px;
     --h3: 27px;
     --p: 19px;
+    --body: 15px;
     --blockquote: 26px;
   }
 
@@ -66,6 +74,7 @@ const GlobalStyle = createGlobalStyle`
     --h1: 41px;
     --h2: 36px;
     --p: 20px;
+    --body: 16px;
   }
 
   @media(min-width:1152px) {
@@ -75,6 +84,7 @@ const GlobalStyle = createGlobalStyle`
     --h2: 26px;
     --h3: 24px;
     --p: 18px;
+    --body: 14px;
   }
 
   @media(min-width:1440px) {
@@ -83,6 +93,7 @@ const GlobalStyle = createGlobalStyle`
     --h2: 28px;
     --h3: 25px;
     --p: 19px;
+    --body: 15px;
   }
 }
 * {

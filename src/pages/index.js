@@ -3,12 +3,12 @@ import Seo from '../components/SEO';
 import BannerModule from '../components/BannerModule/BannerModule';
 import BasicTextModule from '../components/BasicTextModule/BasicTextModule';
 import PerksModule from '../components/PerksModule/PerksModule';
-import Perk from '../components/PerksModule/Perk';
 import Features from '../components/Features/Features';
 import { UseSiteMetadata } from '../hooks/useSiteMetadata';
 import { StaticImage } from 'gatsby-plugin-image';
 import SiteContext, { THEMES } from "../components/SiteContext"
 import TeamMembers from "../components/TeamMembers/TeamMembers"
+import Partners from "../components/Partners/Partners"
 
 const Index = () => {
   const {
@@ -37,11 +37,10 @@ const Index = () => {
         }
       />
       <BasicTextModule title={productsTitle} description={productsDesc} />
-      <PerksModule perks={perks}>
-        <Perk title="The Title" content="The content" />
-      </PerksModule>
+      <PerksModule perks={perks} />
       <Features />
       <TeamMembers />
+      <Partners />
     </>
   );
 };

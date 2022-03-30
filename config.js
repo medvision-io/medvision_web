@@ -6,7 +6,7 @@
 
 module.exports = {
   title: 'zhiva.ai',
-  description: 'democratizing AI in medicine',
+  description: 'Powering AI for radiology',
   author: 'zhiva.ai',
   image: '/medvision.png',
   siteUrl: 'https://zhiva.ai',
@@ -31,6 +31,22 @@ module.exports = {
     title: 'Get in touch',
     subTitle: '',
   },
+  partners: [
+    {
+      title: 'Smarter Diagnostics',
+      subtitle: 'Smarter Achilles MRI',
+      descriptions:
+        ['The world’s first pilot Achilles tendon screening study organized jointly by Smarter Diagnostics and Gamma Medical Center!', 'Our mission is to improve injury prevention and the recovery after sports traumas by providing state-of-the-art AI solutions for data analysis.'],
+      avatar: '/avatars/smd/smd_logo.png',
+      image: '/avatars/smd/smd_img.jpg',
+      social: {
+        demo: 'https://demo.smarterdiagnostics.com/',
+        www: 'https://www.smarterdiagnostics.com/',
+        linkedin: 'https://www.linkedin.com/company/smarter-diagnostics/',
+        email: 'info@smarterdiagnostics.com',
+      }
+    },
+  ],
   team: [
     {
       name: 'Piotr Mazurek',
@@ -71,29 +87,29 @@ module.exports = {
   ],
   home: {
     title: 'zhiva.ai',
-    subTitle: 'Democratization of AI for medical imaging',
+    subTitle: 'Powering AI for radiology',
     productsTitle:
-      'Support your diagnosis with machine learning solutions for medical imaging.',
+      'Software platform for fast and easy deployment of AI models for radiology. ',
     productsDesc:
-      'Use one of the models provided by our partners. Verify that your decision is consistent with the predictions of the machine learning model. Use a visualization tool to understand the reasoning behind the model.',
+      'Use our platform to integrate various AI solutions into your radiology workflow. Consolidate multiple AI models into one convenient tool. Provide radiologists with a tool that improves their productivity and reduces costs.',
     perks: [
       {
-        title: 'DICOMs in a browser',
+        title: 'AI model integration',
         description:
-          'View DICOMs directly in your web browser, without the need to install anything.',
-        image: '/logos/devices.svg',
+          'Our platform is a one-stop-shop for cutting-edge, clinically validated AI models for radiology. A wide range of products empowers doctors in various high-value clinical scenarios.',
+        image: '/logos/ai.svg',
       },
       {
-        title: 'Share DICOMs',
+        title: 'A smooth experience',
         description:
-          'Easily share DICOM images with other clinicians and patients by simply sending them a link.',
+          'Zhiva is available for deployment in-cloud and on-premise and comes with a zero-footprint DICOM viewer, which enables seamless integration into current workflows.',
+        image: '/logos/cloud-data.svg',
+      },
+      {
+        title: 'Share results with doctors or patients',
+        description:
+          'Sharing both images and AI results with other clinicians is as simple as a single click. You can send these results to your patients as well.',
         image: '/logos/share.svg',
-      },
-      {
-        title: 'AI assistant',
-        description:
-          'Accelerate your work by using AI algorithms available on our platform.',
-        image: '/logos/medkit.svg',
       },
     ],
   },

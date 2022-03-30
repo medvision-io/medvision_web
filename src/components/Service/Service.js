@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Grid from "../Grid/Grid"
-import services from "../../constants/services"
+import services from "../../constants/integrations"
 
 const ServiceItem = styled.article`
   background-color: #272727;
