@@ -16,6 +16,18 @@ const getPartners = graphql`
           social {
             www
             demo
+            email
+            facebook
+            github
+            instagram
+            linkedin
+            medium
+            snapchat
+            skype
+            twitch
+            twitter
+            whatsapp
+            youtube
           }
         }
       }
