@@ -13,7 +13,7 @@ const Partner = ({ partner }) => {
         <div className="partners__item--content">
           {title && <h2>{title}</h2>}
           {subtitle && <p>{subtitle}</p>}
-          {descriptions && descriptions.map(el => <span>{el}</span>)}
+          {descriptions && descriptions.map(el => <span style={{fontStyle: el.charAt(0) === '"' && el.charAt(el.length - 1) === '"' ? 'italic' : 'inherit'}}>{el}</span>)}
         </div>
 
         <div className="social__menu">

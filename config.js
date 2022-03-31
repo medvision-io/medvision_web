@@ -36,7 +36,7 @@ module.exports = {
       title: 'Smarter Diagnostics',
       subtitle: 'Smarter Achilles MRI',
       descriptions:
-        ['The world’s first pilot Achilles tendon screening study organized jointly by Smarter Diagnostics and Gamma Medical Center!', 'Our mission is to improve injury prevention and the recovery after sports traumas by providing state-of-the-art AI solutions for data analysis.'],
+        ['The world’s first pilot Achilles tendon screening study organized jointly by Smarter Diagnostics and Gamma Medical Center!', '"Our mission is to improve injury prevention and the recovery after sports traumas by providing state-of-the-art AI solutions for data analysis."'],
       avatar: '/avatars/smd/smd_logo.png',
       image: '/avatars/smd/smd_img.jpg',
       social: {

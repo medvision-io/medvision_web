@@ -202,6 +202,7 @@ export const PartnersStyles = styled.section`
       > span {
         color: var(--fontColorSecondary);
         font-size: var(--body);
+        text-align: justify;
         margin: 8px 0;
         padding: 0 8px;
       }
