@@ -7,5 +7,6 @@
 <url> <loc>https://zhiva.ai/posts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://zhiva.ai/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://zhiva.ai/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zhiva.ai/media/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://zhiva.ai/products/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
