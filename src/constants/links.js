@@ -36,6 +36,10 @@ export const menuItems = [
     path: '/contact',
     text: 'contact',
   },
+  {
+    path: '/media',
+    text: 'For Media',
+  },
 ];
 
 export const socialItems = [

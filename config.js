@@ -31,6 +31,10 @@ module.exports = {
     title: 'Get in touch',
     subTitle: '',
   },
+  mediaPage: {
+    title: 'For Media',
+    subTitle: '',
+  },
   partners: [
     {
       title: 'Smarter Diagnostics',

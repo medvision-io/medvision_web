@@ -28,6 +28,10 @@ const UseSiteMetadata = () => {
               title
               subTitle
             }
+            mediaPage {
+              title
+              subTitle
+            }
             home {
               title
               subTitle
