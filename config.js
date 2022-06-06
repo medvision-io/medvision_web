@@ -60,6 +60,29 @@ module.exports = {
         youtube: '',
       }
     },
+    {
+      title: 'Cancer Center',
+      descriptions:
+        ['AI platform for radiology and pathology diagnostics, focused on prostate imaging.', '"We strive to provide physicians around the world with state-of-the-art tools to support them in the process of detecting and classifying malignancies. Our AI is trained using multiple modalities, providing comprehensive assistance in the cancer diagnosis process."'],
+      avatar: '/avatars/cc/cc_logo.png',
+      image: '/avatars/cc/cc_img.jpg',
+      social: {
+        demo: 'https://pathoplatform.cancercenter.eu/',
+        www: 'https://cancercenter.ai/',
+        linkedin: '',
+        email: 'info@cancercenter.ai',
+        facebook: '',
+        github: '',
+        instagram: '',
+        medium: '',
+        snapchat: '',
+        skype: '',
+        twitch: '',
+        twitter: 'https://twitter.com/CancerCenterAi',
+        whatsapp: '',
+        youtube: 'https://www.youtube.com/channel/UCg15E1Oj9ugJ-ifuVcL4mjA',
+      }
+    },
   ],
   team: [
     {

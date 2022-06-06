@@ -137,13 +137,14 @@ export const PartnersStyles = styled.section`
 
     &--image {
       height: 100%;
-      width: 160px;
+      width: 70px;
       background-position: center;
       object-fit: cover;
     }
     
     &--container {
       display: flex;
+      width: 320px;
       flex-direction: column;
       align-items: center;
     }
