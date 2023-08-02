@@ -39,7 +39,6 @@ const Index = () => {
       <BasicTextModule title={productsTitle} description={productsDesc} />
       <PerksModule perks={perks} />
       <Features />
-      <TeamMembers />
       <Partners />
     </>
   );
