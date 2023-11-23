@@ -143,7 +143,7 @@ const Contact = () => {
       {error && (
         <Alert severity={ALERT_VARIANT.ERROR} onClose={handleClick}>
           Cannot connect to the mail server, please contact{' '}
-          <a href={`mailto:ceo@zhiva.ai`}>ceo@zhiva.ai</a> directly. <br/>We are very
+          <a href={`mailto:ceo@zhiva.org`}>ceo@zhiva.org</a> directly. <br/>We are very
           sorry for your inconvenience.
         </Alert>
       )}

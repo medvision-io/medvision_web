@@ -1,5 +1,5 @@
 <h1 align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-  <img src="src/components/NavModule/medvision_logo.svg" height="50px" /> zhiva.ai Website
+  <img src="src/components/NavModule/medvision_logo.svg" height="50px" /> ZhivaAI Website
 </h1>
 
 Page built with [GatsbyJS](https://www.gatsbyjs.com/).

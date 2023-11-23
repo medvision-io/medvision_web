@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://zhiva.ai',
-        sitemap: 'https://zhiva.ai/sitemap.xml',
+        host: 'https://zhiva.org',
+        sitemap: 'https://zhiva.org/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

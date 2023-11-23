@@ -25,11 +25,11 @@ export const menuItems = [
     text: 'products',
   },
   {
-    path: 'https://alpha.zhiva.ai',
+    path: 'https://alpha.zhiva.org',
     text: 'demo',
   },
   {
-    path: 'https://docs.zhiva.ai/latest',
+    path: 'https://docs.zhiva.org/latest',
     text: 'docs',
   },
   {

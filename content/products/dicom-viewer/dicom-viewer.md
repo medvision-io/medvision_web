@@ -19,4 +19,4 @@ Beyond our AI superpowers, the viewer has all the standard soft-copy imaging too
 
 ![](./annotation_example.png)
 
-The viewer can be extended by any third-party AI models. We prepared a technical documentation for developers, available at [https://docs.zhiva.ai/](https://docs.zhiva.ai/). We support common formats and standards to enable interoperability. Zhiva’s viewer works well with formats such as DICOM SEG, JSON, and more. We also provide several customization options for AI vendors, by allowing them to tailor the way AI predictions and displayed in the viewer.
+The viewer can be extended by any third-party AI models. We prepared a technical documentation for developers, available at [https://docs.zhiva.org/](https://docs.zhiva.org/). We support common formats and standards to enable interoperability. Zhiva’s viewer works well with formats such as DICOM SEG, JSON, and more. We also provide several customization options for AI vendors, by allowing them to tailor the way AI predictions and displayed in the viewer.

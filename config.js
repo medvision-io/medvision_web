@@ -5,12 +5,12 @@
  */
 
 module.exports = {
-  title: 'zhiva.ai',
+  title: 'ZhivaAI',
   description: 'Powering AI for radiology',
-  author: 'zhiva.ai',
+  author: 'ZhivaAI',
   image: '/medvision.png',
-  siteUrl: 'https://zhiva.ai',
-  copyright: 'zhiva.ai © All rights reserved.',
+  siteUrl: 'https://zhiva.org',
+  copyright: 'ZhivaAI © All rights reserved.',
   postsPerPage: 6,
   GTag: 'G-S28PSG7HTG',
   twitter: 'https://twitter.com/zhiva_ai',
@@ -89,7 +89,7 @@ module.exports = {
       name: 'Piotr Mazurek',
       title: 'Chief Executive Officer',
       image: '/team/piotr.jpg',
-      email: 'piotr.mazurek@zhiva.ai',
+      email: 'piotr.mazurek@zhiva.org',
       facebook: '',
       github: 'https://github.com/tugot17',
       instagram: '',
@@ -107,7 +107,7 @@ module.exports = {
       name: 'Kemal Erdem',
       title: 'Chief Technology Officer',
       image: '/team/kemal.jpg',
-      email: 'kemal.erdem@zhiva.ai',
+      email: 'kemal.erdem@zhiva.org',
       facebook: '',
       github: 'https://github.com/burnpiro',
       instagram: '',
@@ -123,7 +123,7 @@ module.exports = {
     },
   ],
   home: {
-    title: 'zhiva.ai',
+    title: 'ZhivaAI',
     subTitle: 'Powering AI for radiology',
     productsTitle:
       'Software platform for fast and easy deployment of AI models for radiology. ',
